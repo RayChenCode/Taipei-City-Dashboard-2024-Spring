@@ -6,7 +6,8 @@ services:
     image: redis:7.2.3-alpine
     volumes:
       - ./db-data/redis-data:/data
-      
+    ports:
+      - "6379:6379"
   postgres-data:
     image: postgis/postgis:16-3.4
     container_name: postgres-data
@@ -17,7 +18,8 @@ services:
       POSTGRES_PASSWORD: ${DB_DASHBOARD_PASSWORD}
     volumes:
       - ./db-data/postgres-data:/var/lib/postgresql/data
-
+    ports:
+      - "5433:5432"
   postgres-manager:
     image: postgis/postgis:16-3.4
     container_name: postgres-manager

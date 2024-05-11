@@ -21,11 +21,21 @@ func ConfigureRoutes() {
 	Router.Use(middleware.ValidateJWT)
 	// API routers
 	RouterGroup = Router.Group("/api/" + global.VERSION)
+	configureEnhanceComponentRoutes()
 	configureAuthRoutes()
 	configureUserRoutes()
 	configureComponentRoutes()
 	configureDashboardRoutes()
 	configureIssueRoutes()
+}
+
+func configureEnhanceComponentRoutes() {
+	enhanceRoutes := RouterGroup.Group("/enhance")
+	enhanceRoutes.Use(middleware.LimitAPIRequests(global.UserLimitAPIRequestsTimes, global.LimitRequestsDuration))
+	enhanceRoutes.Use(middleware.LimitTotalRequests(global.UserLimitTotalRequestsTimes, global.TokenExpirationDuration))
+	//enhanceRoutes.Use(middleware.IsLoggedIn())
+	enhanceRoutes.GET("/", controllers.GetAllComponentTag)
+	enhanceRoutes.GET("/tagScores", controllers.GetTagScores)
 }
 
 func configureAuthRoutes() {
