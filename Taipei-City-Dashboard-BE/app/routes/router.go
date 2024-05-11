@@ -34,8 +34,10 @@ func configureEnhanceComponentRoutes() {
 	enhanceRoutes.Use(middleware.LimitAPIRequests(global.UserLimitAPIRequestsTimes, global.LimitRequestsDuration))
 	enhanceRoutes.Use(middleware.LimitTotalRequests(global.UserLimitTotalRequestsTimes, global.TokenExpirationDuration))
 	//enhanceRoutes.Use(middleware.IsLoggedIn())
-	enhanceRoutes.GET("/", controllers.GetAllComponentTag)
+	enhanceRoutes.GET("/", controllers.GetAllComponentText)
 	enhanceRoutes.GET("/tagScores", controllers.GetTagScores)
+	enhanceRoutes.GET("/componentsTag", controllers.GetAllComponentTags)
+	enhanceRoutes.GET("/setDashboardComponents", controllers.SetDashboardComponents)
 }
 
 func configureAuthRoutes() {
