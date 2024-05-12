@@ -14,6 +14,7 @@ import { useMapStore } from "../store/mapStore";
 import { useAuthStore } from "../store/authStore";
 import DashboardView from "../views/DashboardView.vue";
 import MapView from "../views/MapView.vue";
+import CityGPT from "../views/CityGPT.vue";
 import ComponentView from "../views/ComponentView.vue";
 import ComponentInfoView from "../views/ComponentInfoView.vue";
 import EmbedView from "../views/EmbedView.vue";
@@ -37,6 +38,11 @@ const routes = [
 		path: "/mapview",
 		name: "mapview",
 		component: MapView,
+	},
+	{
+		path: "/citygpt",
+		name: "citygpt",
+		component: CityGPT,
 	},
 	{
 		path: "/component",

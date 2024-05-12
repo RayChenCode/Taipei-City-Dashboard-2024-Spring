@@ -11,7 +11,7 @@ Testing: Jack Huang (Data Scientist), Ian Huang (Data Analysis Intern)
 <!-- Map charts will be hidden in mobile mode and be replaced with the mobileLayers dialog -->
 
 <script setup>
-import { computed } from "vue";
+import { computed, onMounted, ref } from "vue";
 import { DashboardComponent } from "city-dashboard-component";
 import { useContentStore } from "../store/contentStore";
 import { useDialogStore } from "../store/dialogStore";
@@ -24,7 +24,6 @@ import ReportIssue from "../components/dialogs/ReportIssue.vue";
 const contentStore = useContentStore();
 const dialogStore = useDialogStore();
 const mapStore = useMapStore();
-
 // Separate components with maps from those without
 const parseMapLayers = computed(() => {
 	const hasMap = contentStore.currentDashboard.components?.filter(
@@ -33,7 +32,8 @@ const parseMapLayers = computed(() => {
 	const noMap = contentStore.currentDashboard.components?.filter(
 		(item) => !item.map_config[0]
 	);
-
+	console.log('a', hasMap)
+	// mapStore.addToMapLayerList(hasMap[1].map_config);
 	return { hasMap: hasMap, noMap: noMap };
 });
 
@@ -46,7 +46,7 @@ function handleOpenSettings() {
 }
 
 // Open and closes the component as well as communicates to the mapStore to turn on and off map layers
-function handleToggle(value, map_config) {
+function handleToggle(value, map_config, item) {
 	if (!map_config[0]) {
 		if (value) {
 			dialogStore.showNotification(
@@ -57,6 +57,7 @@ function handleToggle(value, map_config) {
 		return;
 	}
 	if (value) {
+		console.log('map_config', item)
 		mapStore.addToMapLayerList(map_config);
 	} else {
 		mapStore.clearByParamFilter(map_config);
@@ -72,180 +73,120 @@ function shouldDisable(map_config) {
 			.length > 0
 	);
 }
+const wrap = { refs: ref([]) };
+onMounted(() => {
+	console.log('wrap', wrap.refs.value)
+	setTimeout(() => {
+		let n = document.getElementsByClassName('toggleswitch-slider').length
+		for (let i = 0; i < n; i++) {
+			document.getElementsByClassName('toggleswitch-slider')[i].click()
+		}
+	}, 5000)
+})
 </script>
 
 <template>
 	<div class="map">
 		<div class="hide-if-mobile">
 			<!-- 1. If the dashboard is map-layers -->
-			<div
-				v-if="contentStore.currentDashboard.index === 'map-layers'"
-				class="map-charts"
-			>
-				<DashboardComponent
-					v-for="item in contentStore.currentDashboard.components"
-					:key="`map-layer-${item.index}-${contentStore.currentDashboard.index}`"
-					:config="item"
-					mode="halfmap"
-					:info-btn="true"
-					:toggle-disable="shouldDisable(item.map_config)"
-					@info="
-						(item) => {
+			<div v-if="contentStore.currentDashboard.index === 'map-layers'" class="map-charts">
+				<DashboardComponent v-for="item in contentStore.currentDashboard.components"
+					:key="`map-layer-${item.index}-${contentStore.currentDashboard.index}`" :config="item" mode="halfmap"
+					:info-btn="true" :toggle-disable="shouldDisable(item.map_config)" @info="(item) => {
 							dialogStore.showMoreInfo(item);
 						}
-					"
-					@toggle="
-						(value, map_config) => {
-							handleToggle(value, map_config);
-						}
-					"
-					@filter-by-param="
-						(map_filter, map_config, x, y) => {
-							mapStore.filterByParam(
-								map_filter,
-								map_config,
-								x,
-								y
-							);
-						}
-					"
-					@filter-by-layer="
-						(map_config, layer) => {
-							mapStore.filterByLayer(map_config, layer);
-						}
-					"
-					@clear-by-param-filter="
-						(map_config) => {
-							mapStore.clearByParamFilter(map_config);
-						}
-					"
-					@clear-by-layer-filter="
-						(map_config) => {
-							mapStore.clearByLayerFilter(map_config);
-						}
-					"
-				/>
+						" @toggle="(value, map_config) => {
+			handleToggle(value, map_config);
+		}
+		" @filter-by-param="(map_filter, map_config, x, y) => {
+			mapStore.filterByParam(
+				map_filter,
+				map_config,
+				x,
+				y
+			);
+		}
+		" @filter-by-layer="(map_config, layer) => {
+			mapStore.filterByLayer(map_config, layer);
+		}
+		" @clear-by-param-filter="(map_config) => {
+			mapStore.clearByParamFilter(map_config);
+		}
+		" @clear-by-layer-filter="(map_config) => {
+			mapStore.clearByLayerFilter(map_config);
+		}
+		" />
 			</div>
 			<!-- 2. Dashboards that have components -->
-			<div
-				v-else-if="
-					contentStore.currentDashboard.components?.length !== 0 &&
-					contentStore.mapLayers.length > 0
-				"
-				class="map-charts"
-			>
-				<DashboardComponent
-					v-for="item in parseMapLayers.hasMap"
-					:key="`map-layer-${item.index}-${contentStore.currentDashboard.index}`"
-					:config="item"
-					mode="map"
-					:info-btn="true"
-					:toggle-disable="shouldDisable(item.map_config)"
-					@info="
-						(item) => {
+			<div v-else-if="contentStore.currentDashboard.components?.length !== 0 &&
+				contentStore.mapLayers.length > 0
+				" class="map-charts">
+				<DashboardComponent v-for="item in parseMapLayers.hasMap" :ref="wrap.refs"
+					:key="`map-layer-${item.index}-${contentStore.currentDashboard.index}`" :config="item" mode="map"
+					:info-btn="true" :toggle-disable="shouldDisable(item.map_config)" @info="(item) => {
 							dialogStore.showMoreInfo(item);
 						}
-					"
-					@toggle="
-						(value, map_config) => {
-							handleToggle(value, map_config);
-						}
-					"
-					@filter-by-param="
-						(map_filter, map_config, x, y) => {
-							mapStore.filterByParam(
-								map_filter,
-								map_config,
-								x,
-								y
-							);
-						}
-					"
-					@filter-by-layer="
-						(map_config, layer) => {
-							mapStore.filterByLayer(map_config, layer);
-						}
-					"
-					@clear-by-param-filter="
-						(map_config) => {
-							mapStore.clearByParamFilter(map_config);
-						}
-					"
-					@clear-by-layer-filter="
-						(map_config) => {
-							mapStore.clearByLayerFilter(map_config);
-						}
-					"
-					@fly="
-						(location) => {
-							mapStore.flyToLocation(location);
-						}
-					"
-				/>
+						" @toggle="(value, map_config) => {
+			handleToggle(value, map_config, item);
+		}
+		" @filter-by-param="(map_filter, map_config, x, y) => {
+			mapStore.filterByParam(
+				map_filter,
+				map_config,
+				x,
+				y
+			);
+		}
+		" @filter-by-layer="(map_config, layer) => {
+			mapStore.filterByLayer(map_config, layer);
+		}
+		" @clear-by-param-filter="(map_config) => {
+			mapStore.clearByParamFilter(map_config);
+		}
+		" @clear-by-layer-filter="(map_config) => {
+			mapStore.clearByLayerFilter(map_config);
+		}
+		" @fly="(location) => {
+			mapStore.flyToLocation(location);
+		}
+		" />
 				<h2>基本圖層</h2>
-				<DashboardComponent
-					v-for="item in contentStore.mapLayers"
-					:key="`map-layer-${item.index}-${contentStore.currentDashboard.index}`"
-					:config="item"
-					mode="halfmap"
-					:info-btn="true"
-					:toggle-disable="shouldDisable(item.map_config)"
-					@info="
-						(item) => {
+				<DashboardComponent v-for="item in contentStore.mapLayers" ref="arr"
+					:key="`map-layer-${item.index}-${contentStore.currentDashboard.index}`" :config="item" mode="halfmap"
+					:info-btn="true" :toggle-disable="shouldDisable(item.map_config)" @info="(item) => {
 							dialogStore.showMoreInfo(item);
 						}
-					"
-					@toggle="
-						(value, map_config) => {
-							handleToggle(value, map_config);
-						}
-					"
-					@filter-by-param="
-						(map_filter, map_config, x, y) => {
-							mapStore.filterByParam(
-								map_filter,
-								map_config,
-								x,
-								y
-							);
-						}
-					"
-					@filter-by-layer="
-						(map_config, layer) => {
-							mapStore.filterByLayer(map_config, layer);
-						}
-					"
-					@clear-by-param-filter="
-						(map_config) => {
-							mapStore.clearByParamFilter(map_config);
-						}
-					"
-					@clear-by-layer-filter="
-						(map_config) => {
-							mapStore.clearByLayerFilter(map_config);
-						}
-					"
-				/>
+						" @toggle="(value, map_config) => {
+			handleToggle(value, map_config);
+		}
+		" @filter-by-param="(map_filter, map_config, x, y) => {
+			mapStore.filterByParam(
+				map_filter,
+				map_config,
+				x,
+				y
+			);
+		}
+		" @filter-by-layer="(map_config, layer) => {
+			mapStore.filterByLayer(map_config, layer);
+		}
+		" @clear-by-param-filter="(map_config) => {
+			mapStore.clearByParamFilter(map_config);
+		}
+		" @clear-by-layer-filter="(map_config) => {
+			mapStore.clearByLayerFilter(map_config);
+		}
+		" />
 				<h2 v-if="parseMapLayers.noMap?.length > 0">無空間資料組件</h2>
-				<DashboardComponent
-					v-for="item in parseMapLayers.noMap"
-					:key="`map-layer-${item.index}-${contentStore.currentDashboard.index}`"
-					:config="item"
-					mode="map"
-					:info-btn="true"
-					@info="
-						(item) => {
+				<DashboardComponent v-for="item in parseMapLayers.noMap"
+					:key="`map-layer-${item.index}-${contentStore.currentDashboard.index}`" :config="item" mode="map"
+					:info-btn="true" @info="(item) => {
 							dialogStore.showMoreInfo(item);
 						}
-					"
-					@toggle="handleToggle"
-				/>
+						" @toggle="handleToggle" />
 			</div>
 			<!-- 3. If dashboard is still loading -->
-			<div
-				v-else-if="contentStore.loading"
-				class="map-charts-nodashboard"
-			>
+			<div v-else-if="contentStore.loading" class="map-charts-nodashboard">
 				<div />
 			</div>
 			<!-- 4. If dashboard failed to load -->
@@ -257,11 +198,8 @@ function shouldDisable(map_config) {
 			<div v-else class="map-charts-nodashboard">
 				<span>addchart</span>
 				<h2>尚未加入組件</h2>
-				<button
-					v-if="contentStore.currentDashboard.icon !== 'favorite'"
-					class="hide-if-mobile"
-					@click="handleOpenSettings"
-				>
+				<button v-if="contentStore.currentDashboard.icon !== 'favorite'" class="hide-if-mobile"
+					@click="handleOpenSettings">
 					加入您的第一個組件
 				</button>
 				<p v-else>點擊其他儀表板組件之愛心以新增至收藏組件</p>

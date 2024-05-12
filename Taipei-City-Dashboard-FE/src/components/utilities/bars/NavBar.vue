@@ -68,6 +68,13 @@ const linkQuery = computed(() => {
       >
         地圖交叉比對
       </router-link>
+      <router-link
+        :to="`/cityGPT${
+          linkQuery.includes('undefined') ? '' : linkQuery
+        }`"
+      >
+        淨零小幫手
+      </router-link>
     </div>
     <div class="navbar-user">
       <a

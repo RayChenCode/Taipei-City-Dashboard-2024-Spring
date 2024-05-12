@@ -247,7 +247,12 @@ export const useMapStore = defineStore("map", {
 				this.AddVoronoiMapLayer(map_config, data);
 			} else if (map_config.type === "isoline") {
 				this.AddIsolineMapLayer(map_config, data);
-			} else {
+			}
+			else if (map_config.type === "3dRoute") {
+				this.Add3dRouteMapLayer(map_config, data);
+			 
+		}  
+			else {
 				this.addMapLayer(map_config);
 			}
 		},
@@ -850,5 +855,98 @@ export const useMapStore = defineStore("map", {
 			this.currentVisibleLayers = [];
 			this.removePopup();
 		},
+		Add3dRouteMapLayer(map_config, data)
+	{
+		let layer_id = map_config.layerId;
+		
+		
+		this.Add3DRouteLayer(map_config, data, this.threeboxModelSource)
+
 	},
+	
+	Add3DRouteLayer(map_config, data, car) {
+		// this.loadingLayers.push("rendering")
+		let lay_id = `test_route270Point-circle`;
+		const mySource = this.map.getSource(lay_id);
+		//let rd = this.getdata();
+
+		console.log("mySource0",mySource)
+		// 該路線資料座標（lineString）, 根據資料暫時取第一筆lineString
+		// const lineStringSource = data.features[4].geometry.coordinates
+		// console.log("data.features" , data.features)
+		const allRoutes = data.features
+		const tb = (window.tb = new Threebox(
+			this.map,
+			this.map.getCanvas().getContext("webgl"),
+			{ defaultLights: true }
+		))
+		
+		let origin = [121.513828586866, 24.9871915611334]
+		let destination, line
+		
+		this.map.addLayer({
+			id: map_config.layerId,
+			type: "custom",
+			renderingMode: "3d",
+			onAdd: function () {
+				let duration = 10000
+
+				for (let route of allRoutes) {
+					let lineOptions = {
+						animation: 1,
+						path: route.geometry.coordinates,
+						duration: duration
+					}
+					let lineGeometry = lineOptions.path
+						.map(function (coordinate) {
+							return coordinate.concat([15])
+						})
+					let line = tb.line({
+						geometry: lineGeometry,
+						width: 2,
+						color: map_config.paint["line-color"]
+					})
+					tb.add(line)
+					let options = {
+						obj: '../model/car03.gltf',
+						type: 'gltf',
+						scale: 80,
+						units: 'meters',
+						rotation: { x: 90, y: 0, z: 0 },
+						anchor: 'center'//default rotation
+					}
+					tb.loadObj(options, function (model) {
+						car = model.setCoords(origin)
+						tb.add(car)
+						car.followPath(
+							lineOptions,
+							function () {
+								// tb.remove(line)
+							}
+						)
+						car.playAnimation(lineOptions)
+					})
+				}
+			},
+			render: function () {
+				tb.update(); //update Threebox scene
+			},
+		})
+		this.currentLayers.push(map_config.layerId);
+		this.mapConfigs[map_config.layerId] = map_config;
+		this.currentVisibleLayers.push(map_config.layerId);
+		this.loadingLayers = this.loadingLayers.filter(
+			(el) => el !== map_config.layerId
+		)
+		
+	},
+	}
+
+
+
+
+
+
+
+
 });
