@@ -1,0 +1,73 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+			"type": "Feature",
+			"properties": {
+				"occur_time": "2019-01-02T08:37:00",
+				"type": "A2",
+				"location": "大同區重慶北路3段137巷與民族西路182巷口"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates":  [121.611711416267, 25.0333237475794]
+			}
+		},
+    {
+			"type": "Feature",
+			"properties": {
+				"occur_time": "2019-01-02T08:37:00",
+				"type": "A2",
+				"location": "大同區重慶北路3段137巷與民族西路182巷口"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates":  [121.61658571207, 25.0351103013425]
+			}
+		},
+    {
+			"type": "Feature",
+			"properties": {
+				"occur_time": "2019-01-02T08:37:00",
+				"type": "A2",
+				"location": "大同區重慶北路3段137巷與民族西路182巷口"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates":   [121.585968264308, 25.0485111791352]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"occur_time": "2019-01-02T08:37:00",
+				"type": "A2",
+				"location": "大同區重慶北路3段137巷與民族西路182巷口"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates":   [121.548367845824, 25.0380657237826]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"occur_time": "2019-01-02T08:37:00",
+				"type": "A2",
+				"location": "大同區重慶北路3段137巷與民族西路182巷口"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates":   [121.508133749382, 25.037137633904]
+			}
+		}
+   
+  ],
+  "partTotal": [
+    {
+      "Month": "6",
+      "Route_Green": "羅斯福路幹線,中山幹線, 承德幹線 ,民權幹線"
+    }
+    
+  ]
+}

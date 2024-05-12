@@ -889,7 +889,7 @@ export const useMapStore = defineStore("map", {
 			type: "custom",
 			renderingMode: "3d",
 			onAdd: function () {
-				let duration = 10000
+				let duration = 70000
 
 				for (let route of allRoutes) {
 					let lineOptions = {

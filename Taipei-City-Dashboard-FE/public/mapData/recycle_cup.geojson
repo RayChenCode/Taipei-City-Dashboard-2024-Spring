@@ -1,0 +1,1487 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "2",
+          "type": "餐廳",
+          "area": "中山",
+          "store": "典藏咖啡長安店",
+          "address": "臺北市中山區長安東路一段8-1號",
+          "longitude": "121.5225978",
+          "latitude": "25.0494757"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.522598,
+            25.049476
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "3",
+          "type": "餐廳",
+          "area": "中山",
+          "store": "州啟文創x藝文音樂展演空間",
+          "address": "臺北市中山區吉林路199巷36號",
+          "longitude": "121.5324186",
+          "latitude": "25.0598473"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.532419,
+            25.059847
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "4",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "京沺屋",
+          "address": "臺北市中正區羅斯福路四段136巷1-4號",
+          "longitude": "121.5356431",
+          "latitude": "25.0128718"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.535643,
+            25.012872
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "5",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "泰享喝商行",
+          "address": "臺北市中正區羅斯福路四段138號",
+          "longitude": "121.5358972",
+          "latitude": "25.0129577"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.535897,
+            25.012958
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "7",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "黛黛茶公館秀泰店",
+          "address": "臺北市中正區羅斯福路四段136巷3號",
+          "longitude": "121.5352608",
+          "latitude": "25.0127831"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.535261,
+            25.012783
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "8",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "中場休息",
+          "address": "臺北市中正區汀州路三段149號1樓",
+          "longitude": "121.531258",
+          "latitude": "25.015961"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.531258,
+            25.015961
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "9",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "JODO飯糰咖啡手作專門店",
+          "address": "臺北市中正區汀州路三段131號",
+          "longitude": "121.5307397",
+          "latitude": "25.0162735"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.53074,
+            25.016274
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "10",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "龜記茗品-公館店",
+          "address": "臺北市中正區羅斯福路四段24巷13號",
+          "longitude": "121.5325658",
+          "latitude": "25.0150629"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.532566,
+            25.015063
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "12",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "芋芋鋪",
+          "address": "臺北市大安區新生南路三段76巷5號",
+          "longitude": "121.5332981",
+          "latitude": "25.0190574"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.533298,
+            25.019057
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "13",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "大安新生59",
+          "address": "臺北市大安區新生南路三段60巷2-8號",
+          "longitude": "121.5336283",
+          "latitude": "25.0200145"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.533628,
+            25.020014
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "14",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "武林茶文創人文茶飲坊/公館汀洲店",
+          "address": "臺北市台北市中正區汀洲路三段303號",
+          "longitude": "121.535959",
+          "latitude": "25.0117001"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.535959,
+            25.0117
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "15",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "亞舍咖啡",
+          "address": "臺北市大安區新生南路三段60巷1號",
+          "longitude": "121.533584",
+          "latitude": "25.020137"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.533584,
+            25.020137
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "16",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "日日是好日",
+          "address": "臺北市羅斯福路三段210巷10號1樓",
+          "longitude": "121.528862",
+          "latitude": "25.018238"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.528862,
+            25.018238
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "18",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "九品川",
+          "address": "臺北市中正區羅斯福路四段14號",
+          "longitude": "121.5330043",
+          "latitude": "25.0157396"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.533004,
+            25.01574
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "19",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "城市草倉",
+          "address": "臺北市大安區羅斯福路三段283巷19弄4號",
+          "longitude": "121.5314906",
+          "latitude": "25.0194432"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.531491,
+            25.019443
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "20",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "樂米Lameet",
+          "address": "臺北市中正區羅斯福路三段210巷8弄12號",
+          "longitude": "121.5294595",
+          "latitude": "25.0184076"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.52946,
+            25.018408
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "21",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "芋芋甜點舖",
+          "address": "臺北市大安區新生南路三段76巷5號",
+          "longitude": "121.5332981",
+          "latitude": "25.0190574"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.533298,
+            25.019057
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "22",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "The Shed",
+          "address": "臺北市大安區敦化南路二段172巷32號",
+          "longitude": "121.5469954",
+          "latitude": "25.0239304"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.546995,
+            25.02393
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "24",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "泰街頭",
+          "address": "臺北市大安區溫州街74巷6號1樓",
+          "longitude": "121.5321811",
+          "latitude": "25.0198117"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.532181,
+            25.019812
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "25",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "Mr.雪腐 公館店",
+          "address": "臺北市中正區羅斯福路三段244巷21號",
+          "longitude": "121.5304567",
+          "latitude": "25.0166544"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.530457,
+            25.016654
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "26",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "墾丁蛋蛋ㄉㄨㄞ奶 公館旗艦店",
+          "address": "臺北市中正區汀州路三段165號",
+          "longitude": "121.532295",
+          "latitude": "25.0152949"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.532295,
+            25.015295
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "27",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "快樂檸檬HAPPY Lemon_公館旗艦店",
+          "address": "臺北市中正區羅斯福路四段24巷14號",
+          "longitude": "121.5327484",
+          "latitude": "25.0149221"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.532748,
+            25.014922
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "29",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "Away 別處咖啡館",
+          "address": "臺北市中正區羅斯福路三段244巷9弄2-1號",
+          "longitude": "121.530442",
+          "latitude": "25.0169359"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.530442,
+            25.016936
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "30",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "靈感咖啡",
+          "address": "臺北市大安區新生南路三段84-6號號3樓",
+          "longitude": "121.5334191",
+          "latitude": "25.0188775"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.533419,
+            25.018877
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "31",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "法點法食",
+          "address": "臺北市中正區汀州路三段210號1樓",
+          "longitude": "121.5355283",
+          "latitude": "25.0120275"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.535528,
+            25.012027
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "32",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "甘蔗の媽媽 台北公館店",
+          "address": "臺北市中正區汀洲路三段130號",
+          "longitude": "121.5336751",
+          "latitude": "25.0139415"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.533675,
+            25.013942
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "33",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "進發家 公館店",
+          "address": "臺北市中正區汀州路三段116號",
+          "longitude": "121.5333726",
+          "latitude": "25.0141692"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.533373,
+            25.014169
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "35",
+          "type": "餐廳",
+          "area": "北車",
+          "store": "甘蔗媽媽-台北南陽店",
+          "address": "臺北市中正區南陽街15-4號",
+          "longitude": "121.5161384",
+          "latitude": "25.0442443"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.516138,
+            25.044244
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "36",
+          "type": "餐廳",
+          "area": "北車",
+          "store": "鶴茶樓- 鶴頂紅茶商店(北車信陽店)",
+          "address": "臺北市中正區信陽街18號",
+          "longitude": "121.5156606",
+          "latitude": "25.0445032"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.515661,
+            25.044503
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "37",
+          "type": "餐廳",
+          "area": "北車",
+          "store": "茶鬍(中正漢口店)",
+          "address": "臺北市中正區漢口街一段110-1號",
+          "longitude": "121.5112043",
+          "latitude": "25.0451044"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.511204,
+            25.045104
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "38",
+          "type": "餐廳",
+          "area": "北車",
+          "store": "50嵐西門店",
+          "address": "臺北市萬華區漢中街130號",
+          "longitude": "121.507163",
+          "latitude": "25.041904"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.507163,
+            25.041904
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "39",
+          "type": "餐廳",
+          "area": "北車",
+          "store": "咖啡控",
+          "address": "臺北市中正區開封街一段2-28號",
+          "longitude": "121.5143184",
+          "latitude": "25.0458595"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.514318,
+            25.045859
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "41",
+          "type": "餐廳",
+          "area": "古亭",
+          "store": "魚刺人雞蛋糕-台北師大店",
+          "address": "臺北市中正區羅斯福路二段30巷13號",
+          "longitude": "121.5209975",
+          "latitude": "25.0279662"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.520997,
+            25.027966
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "42",
+          "type": "餐廳",
+          "area": "古亭",
+          "store": "克爾咖啡古亭店",
+          "address": "臺北市中正區金門街2-6號",
+          "longitude": "121.524883",
+          "latitude": "25.0233294"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.524883,
+            25.023329
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "43",
+          "type": "餐廳",
+          "area": "古亭",
+          "store": "沛季TEA SHOP",
+          "address": "臺北市中山區松江路259巷27號",
+          "longitude": "121.5345272",
+          "latitude": "25.0596804"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.534527,
+            25.05968
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "45",
+          "type": "餐廳",
+          "area": "古亭",
+          "store": "珈咖好",
+          "address": "臺北市中山區錦州街241巷1弄20號",
+          "longitude": "121.5346868",
+          "latitude": "25.0606464"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.534687,
+            25.060646
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "46",
+          "type": "餐廳",
+          "area": "古亭",
+          "store": "曼鯊鯊餐坊",
+          "address": "臺北市中正區南昌路一段74巷6號1樓",
+          "longitude": "121.517001",
+          "latitude": "25.030863"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.517001,
+            25.030863
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "47",
+          "type": "餐廳",
+          "area": "古亭",
+          "store": "漫畫雜誌愛心空間 e書漫",
+          "address": "臺北市大安區羅斯福路二段75號2樓",
+          "longitude": "121.5231134",
+          "latitude": "25.0265762"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.523113,
+            25.026576
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "48",
+          "type": "餐廳",
+          "area": "古亭",
+          "store": "Cafe' de Corner咖啡佐樂",
+          "address": "臺北市中正區羅斯福路二段36巷1號",
+          "longitude": "121.5212812",
+          "latitude": "25.028117"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.521281,
+            25.028117
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "50",
+          "type": "餐廳",
+          "area": "古亭",
+          "store": "暢唱咖啡",
+          "address": "臺北市中正區晉江街115號",
+          "longitude": "121.5244412",
+          "latitude": "25.0231555"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.524441,
+            25.023156
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "51",
+          "type": "餐廳",
+          "area": "古亭",
+          "store": "藝林名茶",
+          "address": "臺北市大安區羅斯福路三段67號",
+          "longitude": "121.525997",
+          "latitude": "25.022898"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.525997,
+            25.022898
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "52",
+          "type": "餐廳",
+          "area": "永康",
+          "store": "Timing cafe 太迷咖啡",
+          "address": "臺北市中正區金華街19號",
+          "longitude": "121.5189259",
+          "latitude": "25.032583"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.518926,
+            25.032583
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "53",
+          "type": "餐廳",
+          "area": "信義",
+          "store": "佐料咖啡",
+          "address": "臺北市信義區永吉路120巷81弄2號",
+          "longitude": "121.5703497",
+          "latitude": "25.0425858"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.57035,
+            25.042586
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "54",
+          "type": "餐廳",
+          "area": "信義",
+          "store": "蔬漫小姐",
+          "address": "臺北市信義區永吉路120巷82號1樓",
+          "longitude": "121.5701179",
+          "latitude": "25.0425878"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.570118,
+            25.042588
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "56",
+          "type": "餐廳",
+          "area": "信義",
+          "store": "甘蔗の媽媽-永吉店",
+          "address": "臺北市信義區永吉路30巷115號",
+          "longitude": "121.5688521",
+          "latitude": "25.0432181"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.568852,
+            25.043218
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "57",
+          "type": "餐廳",
+          "area": "信義",
+          "store": "NINE TEA 九茶",
+          "address": "臺北市信義區忠孝東路五段71巷26號",
+          "longitude": "121.5672107",
+          "latitude": "25.0424484"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.567211,
+            25.042448
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "58",
+          "type": "餐廳",
+          "area": "信義",
+          "store": "加減鑽飲料店",
+          "address": "臺北市信義區忠孝東路五段71巷10號1樓",
+          "longitude": "121.5672651",
+          "latitude": "25.0418473"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.567265,
+            25.041847
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "59",
+          "type": "餐廳",
+          "area": "信義",
+          "store": "MK coffee",
+          "address": "臺北市信義區永吉路30巷25號",
+          "longitude": "121.5689097",
+          "latitude": "25.044833"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.56891,
+            25.044833
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "61",
+          "type": "餐廳",
+          "area": "信義",
+          "store": "清原芋圓－台北信義吳興店",
+          "address": "臺北市信義區吳興街26號一樓",
+          "longitude": "121.5596868",
+          "latitude": "25.0313875"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.559687,
+            25.031388
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "62",
+          "type": "餐廳",
+          "area": "信義",
+          "store": "呦呦創意吐司YOYO TOAST",
+          "address": "臺北市大安區仁愛路四段300巷25弄",
+          "longitude": "121.5544294",
+          "latitude": "25.0358462"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.554429,
+            25.035846
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "63",
+          "type": "超市",
+          "area": "中山",
+          "store": "全聯(中山松江店)",
+          "address": "臺北市中山區松江路318號",
+          "longitude": "121.5328567",
+          "latitude": "25.0604699"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.532857,
+            25.06047
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "64",
+          "type": "超市",
+          "area": "信義",
+          "store": "全聯(信義黎忠店)",
+          "address": "臺北市信義區和平東路三段391巷16號",
+          "longitude": "121.5581693",
+          "latitude": "25.0202696"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.558169,
+            25.02027
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "66",
+          "type": "速食店",
+          "area": "公館",
+          "store": "麥當勞(台北新生店)",
+          "address": "臺北市大安區新生南路三段88之2號",
+          "longitude": "121.5333445",
+          "latitude": "25.01821"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.533344,
+            25.01821
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "67",
+          "type": "速食店",
+          "area": "公館",
+          "store": "麥當勞(台北公館店)",
+          "address": "臺北市中正區羅斯福路四段76-1號",
+          "longitude": "121.5345802",
+          "latitude": "25.0141862"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.53458,
+            25.014186
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "68",
+          "type": "速食店",
+          "area": "公館",
+          "store": "肯德基(台北台大店)",
+          "address": "臺北市大安區新生南路三段96-1號",
+          "longitude": "121.5331407",
+          "latitude": "25.0172147"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.533141,
+            25.017215
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "1",
+          "type": "餐廳",
+          "area": "中山",
+          "store": "壹咖啡(中山壹蝶店)",
+          "address": "臺北市大同區承德路二段1巷38號",
+          "longitude": "121.5190524",
+          "latitude": "25.0534474"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.519052,
+            25.053447
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "6",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "Half coffee",
+          "address": "臺北市中正區羅斯福路三段286巷4弄4號1樓",
+          "longitude": "121.532084",
+          "latitude": "25.015986"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.532084,
+            25.015986
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "11",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "書屋花甲 X 而立書店",
+          "address": "臺北市大安區羅斯福路三段283巷20號1樓",
+          "longitude": "121.531716",
+          "latitude": "25.0186079"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.531716,
+            25.018608
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "17",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "Melbourne Press Cafe 墨爾本布蕾斯咖啡",
+          "address": "臺北市大安區新生南路三段56巷11號",
+          "longitude": "121.5335175",
+          "latitude": "25.0204776"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.533518,
+            25.020478
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "23",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "典藏咖啡北教大店",
+          "address": "臺北市大安區和平東路二段134號",
+          "longitude": "121.5446374",
+          "latitude": "25.0246244"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.544637,
+            25.024624
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "28",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "BLACK COFFEE黑咖啡 溫州店",
+          "address": "臺北市大安區溫州街74巷8號",
+          "longitude": "121.5321325",
+          "latitude": "25.0198268"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.532133,
+            25.019827
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "34",
+          "type": "餐廳",
+          "area": "公館",
+          "store": "晴喜摘－公館店",
+          "address": "臺北市中正區羅斯福路四段126號",
+          "longitude": "121.5357003",
+          "latitude": "25.0130869"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.5357,
+            25.013087
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "40",
+          "type": "餐廳",
+          "area": "古亭",
+          "store": "GURU HOUSE台大店",
+          "address": "臺北市大安區溫州街74巷5弄3號",
+          "longitude": "121.5318994",
+          "latitude": "25.0194175"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.531899,
+            25.019417
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "44",
+          "type": "餐廳",
+          "area": "古亭",
+          "store": "SU SU CAFE 粟粟咖啡",
+          "address": "臺北市中山區松江路362巷32號",
+          "longitude": "121.5319408",
+          "latitude": "25.0618953"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.531941,
+            25.061895
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "49",
+          "type": "餐廳",
+          "area": "古亭",
+          "store": "歐吧早午餐店",
+          "address": "臺北市大安區羅斯福路三段199號",
+          "longitude": "121.5282508",
+          "latitude": "25.0209815"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.528251,
+            25.020982
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "55",
+          "type": "餐廳",
+          "area": "信義",
+          "store": "珍味果汁店",
+          "address": "臺北市信義區永吉路30巷100號",
+          "longitude": "121.568685",
+          "latitude": "25.043688"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.568685,
+            25.043688
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "60",
+          "type": "餐廳",
+          "area": "信義",
+          "store": "駱師傅法式冰淇淋之家/福爾摩茶",
+          "address": "臺北市信義區永吉路30巷101弄10號",
+          "longitude": "121.5692561",
+          "latitude": "25.0434256"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.569256,
+            25.043426
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "65",
+          "type": "超商",
+          "area": "公館",
+          "store": "7-11(統全門市)",
+          "address": "臺北市中正區汀州路三段249號",
+          "longitude": "121.534345",
+          "latitude": "25.0136689"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.534345,
+            25.013669
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "69",
+          "type": "速食店",
+          "area": "公館",
+          "store": "摩斯漢堡 (台科大店)",
+          "address": "臺北市大安區基隆路四段43號",
+          "longitude": "121.5427043",
+          "latitude": "25.0128577"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.542704,
+            25.012858
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "70",
+          "type": "速食店",
+          "area": "公館",
+          "store": "摩斯漢堡 (台大小福店)",
+          "address": "臺北市大安區羅斯福路四段1號",
+          "longitude": "121.5348371",
+          "latitude": "25.0147271"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.534837,
+            25.014727
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "71",
+          "type": "速食店",
+          "area": "公館",
+          "store": "摩斯漢堡 (長興店)",
+          "address": "臺北市大安區基隆路三段85號",
+          "longitude": "121.5448389",
+          "latitude": "25.0171305"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.544839,
+            25.017131
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "72",
+          "type": "速食店",
+          "area": "公館",
+          "store": "摩斯漢堡 (台大公館店)",
+          "address": "臺北市中正區羅斯福路三段306號1、2樓",
+          "longitude": "121.5324964",
+          "latitude": "25.0161961"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.532496,
+            25.016196
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "73",
+          "type": "速食店",
+          "area": "公館",
+          "store": "摩斯漢堡 (羅斯福路店)",
+          "address": "臺北市大安區羅斯福路三段233號",
+          "longitude": "121.529815",
+          "latitude": "25.0195049"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.529815,
+            25.019505
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "74",
+          "type": "速食店",
+          "area": "北車",
+          "store": "麥當勞(台北公園店)",
+          "address": "臺北市中正區公園路30-1號",
+          "longitude": "121.5168021",
+          "latitude": "25.0445664"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.516802,
+            25.044566
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "75",
+          "type": "餐廳",
+          "area": "北車",
+          "store": "德克士(台北重慶南門市)",
+          "address": "臺北市中正區重慶南路一段100號",
+          "longitude": "121.513072",
+          "latitude": "25.042622"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.513072,
+            25.042622
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "76",
+          "type": "交通場站",
+          "area": "公館",
+          "store": "捷運公館站1號出口",
+          "address": "臺北市中正區羅斯福路四段64之1號",
+          "longitude": "121.5342122",
+          "latitude": "25.0146127"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.534212,
+            25.014613
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "77",
+          "type": "政府機關",
+          "area": "信義",
+          "store": "北市府市政大樓",
+          "address": "臺北市信義區市府路1號1樓",
+          "longitude": "121.5643485",
+          "latitude": "25.0381727"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.564348,
+            25.038173
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "serial": "78",
+          "type": "學校校園",
+          "area": "北車",
+          "store": "臺北市立第一女子高級中學",
+          "address": "臺北市中正區重慶南路一段165號",
+          "longitude": "121.5128995",
+          "latitude": "25.038563"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            121.5129,
+            25.038563
+          ]
+        }
+      }
+    ]
+  }

@@ -99,7 +99,7 @@ func SetDashboardComponents(c *gin.Context) {
 		return
 	}
 
-	query.DashboardIndex = "cd4d75a76ce7"
+	query.DashboardIndex = "283f362e9566"
 
 	sql := "SELECT * FROM components WHERE "
 	for i, tag := range query.Tags {
