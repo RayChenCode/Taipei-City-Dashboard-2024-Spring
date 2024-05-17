@@ -143,13 +143,14 @@ const getDisabled = () => {
 		<div v-for="(text, idx) in assistant.textScript" :key="idx + 'text'">
 			<div class="conversation-wrapper" :class="{ res: idx % 2 === 1 }">
 				<div class="conversation-contnet">
-					<div v-for="(response, index) in text.response" :key="index">
+          <div v-html="text.content" @click="handleLineClick" style="font-size: 30px">
+          </div>
+					<div v-for="(response, index) in text.response" :key="index" style="font-size: 20px; padding: 5px">
 						<input v-model="isSelect" type="checkbox" id="scales" name="scales" :checked="response.score > 50"
-							@click="getDisabled()" @change="onChangee" :value="response.tag_name"/>
-						<label for="scales">標籤: {{ response.tag_name }} 分數:{{ response.score }}</label>
+							@click="getDisabled()" @change="onChangee" :value="response.tag_name" style="zoom: 150%"/>
+            <label for="scales">　{{ response.tag_name }} <span style="color: greenyellow">{{ Math.ceil(+response.score*100)/100 }}</span></label>
 					</div>
-					<div v-html="text.content" @click="handleLineClick">
-					</div>
+
 
 				</div>
 				<span>{{ text.time }}</span>

@@ -282,6 +282,8 @@ func GetTimeSeriesData(query *string, timeFrom string, timeTo string) (chartData
 	var queryString string
 
 	// 1. Check if query contains substring '%s'. If so, the component can be queried by time.
+	timeFrom = strings.ReplaceAll(timeFrom, "+08:00", "")
+	timeTo = strings.ReplaceAll(timeTo, "+08:00", "")
 	if strings.Count(*query, "%s") == 2 {
 		queryString = fmt.Sprintf(*query, timeFrom, timeTo)
 	} else {

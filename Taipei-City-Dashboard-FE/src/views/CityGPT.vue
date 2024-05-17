@@ -43,7 +43,7 @@ const  sendQuestion =async () => {
   ///if (textVal.value.includes('淨零')) {
   assistant.textScript.push
   ({content: `<span>${textVal.value}</span>`, time: date.getHours() + ':' + date.getMinutes()}, {
-        content: `<div style="margin-top: 5px;display: flex; gap: 9px; cursor: pointer; align-items: center;"><span style="color: #9E8EFF; font-weight: 700; font-size: 14px;" >產生圖表</span></div> `, time: date.getHours() + ':' + date.getMinutes(),
+        content: `<div style="margin-top: 5px;display: flex; gap: 9px; cursor: pointer; align-items: center; "><span style="font-size: 30px; color: #9E8EFF; font-weight: 700; font-size: 14px;" >產生圖表</span></div> `, time: date.getHours() + ':' + date.getMinutes(),
         response: data
       })
   // } else {
@@ -63,7 +63,7 @@ const  sendQuestion =async () => {
       <div class="assistantWrapper-header">
         <div>
           <div>
-            <h3>小幫手</h3>
+            <h1>我是你的淨零小幫手，可以問我任何日常所有減碳相關的議題喔，我會推薦給您適合的圖表</h1>
             <!-- <span @click="dialogStore.showNotification('info', '開啟使用語音助理功能，尋找圖表資訊更便利')">info</span> -->
           </div>
         </div>
